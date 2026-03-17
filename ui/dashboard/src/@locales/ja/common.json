@@ -117,6 +117,7 @@
     "feature-flag": "フィーチャーフラグ",
     "feature-flag-description": "フラグが追加または更新されたときに通知されます",
     "goal": "ゴール",
+    "goal-value": "{{value}} ゴール",
     "goal-description": "ゴールが追加または更新されたときに通知されます",
     "mau-count": "月間アクティブユーザー数",
     "mau-count-description": "毎月1日に月間アクティブユーザー数の通知されます",
@@ -295,7 +296,6 @@
   "docs": "ドキュメント",
   "new": "新規",
   "discard": "変更を破棄",
-  "add-rule": "ルールを追加",
   "continue-editing": "編集を続ける",
   "leave-page": "ページを離れる",
   "note": "メモ",
@@ -314,5 +314,6 @@
   "change": "変更する",
   "rule": "ルール",
   "rules": "ルール",
-  "rule-deleted": "({{count}}) {{tailTitle}} が削除されます："
+  "rule-deleted": "({{count}}) {{tailTitle}} が削除されます：",
+  "loading": "Loading..."
 }
