@@ -659,7 +659,7 @@ const TargetingPage = ({
   );
 
   return (
-    <PageLayout.Content className="p-6 pt-0 gap-y-6 min-w-[900px]">
+    <PageLayout.Content className="p-3 sm:p-6 pt-0 gap-y-6 min-w-full">
       <FormProvider {...form}>
         <Form
           onSubmit={form.handleSubmit(values => onSubmit(values))}
@@ -825,7 +825,7 @@ const TargetingPage = ({
           targetingRule={getValues()}
           isOpen={isOpenConfirmModal}
           isShowScheduleSelect={SCHEDULED_FLAG_CHANGES_ENABLED}
-          onSegmentRuleChannge={handleSegmentRuleChangeDiscard}
+          onSegmentRuleChange={handleSegmentRuleChangeDiscard}
           onSegmentRuleDeleted={handleSegmentRuleDeleted}
           onClose={onCloseConfirmModal}
           onSubmit={additionalValues =>
