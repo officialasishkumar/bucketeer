@@ -289,6 +289,7 @@ const GeneralInfoForm = ({
                     itemSelected={field.value}
                     selectedOptions={[field.value]}
                     onSelectOption={field.onChange}
+                    isExpand
                   />
                 </Form.Control>
                 <Form.Message />
