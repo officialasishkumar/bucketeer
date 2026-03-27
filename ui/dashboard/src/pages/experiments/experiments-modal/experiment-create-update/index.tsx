@@ -557,6 +557,7 @@ const ExperimentCreateUpdateModal = ({
                         disabled={!!isEdit || disabled}
                         hidden={isOpenCreateFlagModal}
                         isLoading={isLoadingFeature}
+                        isExpand
                         placeholder={t(`experiments.select-flag`)}
                         label={
                           featureFlagOptions.find(
@@ -607,9 +608,10 @@ const ExperimentCreateUpdateModal = ({
                       <Form.Control>
                         <Dropdown
                           disabled={!!isEdit || disabled}
+                          isExpand
                           placeholder={t(`experiments.select-variation`)}
                           className="w-full [&>div>p]:truncate [&>div]:max-w-[calc(100%-36px)]"
-                          contentClassName="min-w-[502px]"
+                          contentClassName="sm:min-w-[502px]"
                           options={variationOptions}
                           value={field.value}
                           onChange={field.onChange}
@@ -646,6 +648,7 @@ const ExperimentCreateUpdateModal = ({
                     <Form.Control>
                       <DropdownMenuWithSearch
                         isMultiselect
+                        isExpand
                         disabled={!!isEdit || disabled}
                         hidden={isOpenCreateGoalModal}
                         isLoading={isLoadingGoals}
